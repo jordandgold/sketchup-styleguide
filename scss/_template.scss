@@ -1,0 +1,264 @@
+//
+//  Base Structure
+//----------------------------------------------
+
+body {
+  padding-top: 60px;
+}
+
+
+//
+//  Global add-ons
+//----------------------------------------------
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+//
+//  Navigation
+//----------------------------------------------
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+nav.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  .navbar-brand {
+    width: 140px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+//
+//  Sidebar
+//----------------------------------------------
+
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #ffffff;
+    border-right: 1px solid #eee;
+  }
+}
+
+//
+//  Navigation
+//----------------------------------------------
+
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: $trimble-light-blue;
+}
+
+//
+//  Typography
+//----------------------------------------------
+
+.sub-section {
+  margin-bottom: 30px;
+  &__header {
+    color: $gray-9;
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+}
+
+.font-family-merriweather {
+  font-family: $font-family-merriweather;
+}
+
+
+//
+//  Main Content
+//----------------------------------------------
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+section {
+  margin: 20px 0 20px 0;
+  padding: 0 0 40px 0;
+}
+
+//
+//  Colors
+//----------------------------------------------
+
+.color-box {
+  margin-bottom: 20px;
+  &__swatch {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    display: block;
+    position: relative;
+    &--gray {
+      padding-bottom: 40%;
+    }
+    &__name {
+      display: block;
+      width: 100%; 
+      
+      position: absolute;
+      top: 50%;
+      transform: translateY(calc(-50% - 10px));
+      text-align: center;
+      &.light {
+        color: $trimble-gray-light;
+      }
+      &.dark {
+        color: $trimble-gray;
+      }
+    }
+    &--lighter {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 20px;
+      display: block;
+    }
+    &--darker {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 20px;
+      display: block;
+    }
+  }
+  &__hex {
+    @extend .shadow-1;
+    padding: 4px 0;
+    display: block;
+    text-align: center;
+    background: #ffffff;
+  }
+  .trimble-gray {
+    background-color: $trimble-gray;
+    &--lighter {
+      background-color: $trimble-gray--lighter;
+    }
+    &--darker {
+      background-color: $trimble-gray--darker;
+    }
+  }
+  .trimble-light-blue {
+    background-color: $trimble-light-blue;
+    &--lighter {
+      background-color: $trimble-light-blue--lighter;
+    }
+    &--darker {
+      background-color: $trimble-light-blue--darker;
+    }
+  }
+  .sketchup-red {
+    background-color: $sketchup-red;
+    &--lighter {
+      background-color: $sketchup-red--lighter;
+    }
+    &--darker {
+      background-color: $sketchup-red--darker;
+    }
+  }
+  .trimble-mid-blue {
+    background-color: $trimble-mid-blue;
+    &--lighter {
+      background-color: $trimble-mid-blue--lighter;
+    }
+    &--darker {
+      background-color: $trimble-mid-blue--darker;
+    }
+  }
+  .trimble-gray-4 {
+    background-color: $trimble-gray-4;
+    &--lighter {
+      background-color: $trimble-gray-4--lighter;
+    }
+    &--darker {
+      background-color: $trimble-gray-4--darker;
+    }
+  }
+  .trimble-gray-2 {
+    background-color: $trimble-gray-2;
+    &--lighter {
+      background-color: $trimble-gray-2--lighter;
+    }
+    &--darker {
+      background-color: $trimble-gray-2--darker;
+    }
+  }
+  .trimble-gray-light {
+    background-color: $trimble-gray-light;
+    &--lighter {
+      background-color: $trimble-gray-light--lighter;
+    }
+    &--darker {
+      background-color: $trimble-gray-light--darker;
+    }
+
+  }
+}
+
+
+//
+//  Shadows
+//----------------------------------------------
+
+.shadow-box {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    color: $gray-7;
+    line-height: 1.4em;
+  }
+}

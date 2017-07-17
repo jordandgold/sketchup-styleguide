@@ -1,0 +1,69 @@
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather');
+$font-family-lato: 'Lato', sans-serif;
+$font-family-merriweather: 'Merriweather', serif;
+
+
+// primary colors
+
+$trimble-gray: #363545;
+$trimble-gray--lighter: #81818b;
+$trimble-gray--darker: #22212b;
+
+$trimble-light-blue: #009ad9;
+$trimble-light-blue--lighter: #60C0E7;
+$trimble-light-blue--darker: #006088;
+
+
+// secondary colors
+
+$sketchup-red: #ec2227;
+$sketchup-red--lighter: #f37578;
+$sketchup-red--darker: #931518;
+
+$trimble-mid-blue: #005f9e;
+$trimble-mid-blue--lighter: #609BC2;
+$trimble-mid-blue--darker: #003B63;
+
+$trimble-gray-4: #afafb3;
+$trimble-gray-4--lighter: #CDCDCF;
+$trimble-gray-4--darker: #6D6D70;
+
+$trimble-gray-2: #d0d0d7;
+$trimble-gray-2--lighter: #E2E2E6;
+$trimble-gray-2--darker: #828286;
+
+$trimble-gray-light: #eaeaef;
+$trimble-gray-light--lighter: #F2F2F5;
+$trimble-gray-light--darker: #929295;
+
+
+// trimble grays
+
+$gray-1: #F9F9FB;
+$gray-2: #F3F3F7;
+$gray-3: #EAEAEF;
+$gray-4: #E2E2E7;
+$gray-5: #D0D0D7;
+$gray-6: #BFBFC6;
+$gray-7: #AEAEB6;
+$gray-8: #9D9DA6;
+$gray-9: #8C8B96;
+$gray-10: #7B7A86;
+$gray-11: #6A6976;
+$gray-12: #595868;
+$gray-13: #474655;
+$gray-14: #363545;
+$gray-15: #262533;
+$gray-16: #1B1A26;
+$gray-17: #0B0A12;
+
+$trimbleGrays: #F9F9FB, #F3F3F7, #EAEAEF, #E2E2E7, #D0D0D7, #BFBFC6, #AEAEB6, #9D9DA6, #8C8B96, #7B7A86, #6A6976, #595868, #474655, #363545, #262533, #1B1A26, #0B0A12;
+
+@for $i from 1 through length($trimbleGrays) {
+    .gray-#{$i} {
+        background-color: nth($trimbleGrays, $i)
+    }
+}

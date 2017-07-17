@@ -1,0 +1,18 @@
+{
+  "name": "sketchup-styleguide",
+  "version": "1.0.0",
+  "description": "2017 Style Guide for SketchUp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "highlight.js": "^9.12.0"
+  }
+}
