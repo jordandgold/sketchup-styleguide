@@ -14,7 +14,7 @@
     <link href="styles/styles.css" rel="stylesheet">
 
     <!-- Dashboard core CSS -->
-    <link href="styles/dashboard.css" rel="stylesheet">
+    <link href="node_modules/highlight.js/styles/default.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".sidebar-nav" data-offset="120">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -43,20 +43,14 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="sidebar-nav col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Colors</a></li>
-            <li><a href="#">Typography</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="">Buttons</a></li>
-            <li><a href="">Icons</a></li>
-            <li><a href="">Lists</a></li>
-            <li><a href="">Instructions</a></li>
-            <li><a href="">Product Mockups</a></li>
-            <li><a href="">Photography</a></li>
-            <li><a href="">Scrims</a></li>
-            <li><a href="">Dropshadows</a></li>
-            <li><a href="">Scale Figures</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#buttonsdropdowns">Buttons &amp; Dropdowns</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#dropshadows">Dropshadows</a></li>
+            <li><a href="#scrims">Scrims</a></li>
           </ul>
         </div>
 
@@ -66,7 +60,7 @@
 
           <?php include('sections/typography.php'); ?>
 
-          <section id="buttons">
+          <section id="buttonsdropdowns">
             <div class="row">
               <div class="col-sm-12">
                 <h1>Buttons &amp; Dropdowns</h1>
@@ -274,5 +268,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="node_modules/highlight.js/lib./highlight.js"></script>
   </body>
 </html>
