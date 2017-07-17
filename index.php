@@ -233,6 +233,38 @@
             </div>
           </section>
 
+          <section id="scrims">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>Scrims</h1>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="sub-section">
+                      <h4 class="sub-section__header">left-facing scrims</h4>
+                      <div class="scrim-box">
+                        <div class="scrim--left--gray"></div>
+                      </div>
+                      <div class="scrim-box">
+                        <div class="scrim--left--blue"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="sub-section">
+                      <h4 class="sub-section__header">right-facing scrims</h4>
+                      <div class="scrim-box">
+                        <div class="scrim--right--gray"></div>
+                      </div>
+                      <div class="scrim-box">
+                        <div class="scrim--right--blue"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
     </div>
